@@ -1,53 +1,95 @@
-body {
-    font-family: /*Arial, sans-serif*/montserrat;
-    font-size: 13px;
-    line-height: 18px;
+* {
+    box-sizing: border-box;
 }
 
-.title {
-    font-size: 70px;
-    font-weight: 400px;
-    line-height: 78px;
-    margin: 0;
-    text-align: center;
-    color: #515076;
+body {
+  font-family: Montserrat,/* Arial, Helvetica, sans-serif*/;
+  font-size: 13px;
+  line-height: 18px;
+  margin-left: 25px;
+  color: #515076;
 }
 
 .card {
-    width: 340px;
-    background: #F7F7FA;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
-    height: 573px;
-    color: #515076;
+  background-color: #F7F7FA;
+  width: 340px;
+  padding: 25px;
+  img {
+    width: 290px;
+  }
 }
 
 .img {
-    width: 290px;
-    border: 1px;
-    height: 245px;
-    padding: 25px;
-    
+  width: 290px;
+  height: 245px;
 }
 
-.product-list {
-    list-style: none;
-    padding: 25px;
-    margin: 25px;
-    padding-left: 25px;
-    
+.title {
+  font-size: 70px;
+  font-weight: 400px;
+  line-height: 78px;
+  margin: 0;
+  text-align: center;
 }
 
-.indent {
-    padding-left: 25px;
-    padding-right: 25px;
+.products-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-type {
+  color: #A5A3B9;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.product-name {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 27px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #A5A3B9;
+}
+
+.list {
+  margin-bottom: 5px;
 }
 
 .indent-li {
-    margin-top: 12px;
-    margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.pr {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .price {
-    display: flex;
-    justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  width: 56px;
+  height: 24px;
+}
+
+.cost {
+  font-size: 20px;
+  line-height: 24px;
+  width: 73px;
+  height: 24px;
 }
