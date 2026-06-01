@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: Montserrat,/* Arial, Helvetica, sans-serif*/;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
   margin-left: 25px;
@@ -83,13 +83,9 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  width: 56px;
-  height: 24px;
 }
 
 .cost {
   font-size: 20px;
   line-height: 24px;
-  width: 73px;
-  height: 24px;
 }
