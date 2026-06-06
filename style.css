@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin-left: 25px;
+  color: #515076;
+}
+
+.card {
+  background-color: #F7F7FA;
+  width: 340px;
+  padding: 25px;
+  img {
+    width: 290px;
+  }
+}
+
+.img {
+  width: 290px;
+  height: 245px;
+}
+
+.title {
+  font-size: 70px;
+  font-weight: 400px;
+  line-height: 78px;
+  margin: 0;
+  text-align: center;
+}
+
+.products-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-type {
+  color: #A5A3B9;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.product-name {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 27px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #A5A3B9;
+}
+
+.list {
+  margin-bottom: 5px;
+}
+
+.indent-li {
+  margin-bottom: 25px;
+}
+
+.pr {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.cost {
+  font-size: 20px;
+  line-height: 24px;
+}
