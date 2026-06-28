@@ -73,19 +73,15 @@ list-style-type: none;
 }
 
 .card__text {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
   margin-top: 5px;
   margin-bottom: 15px;
-  color: #A5A3B9;
 }
 
 .card__list {
   margin-bottom: 5px;
 }
 
-.card__li {
+.card__compound-list {
   margin-bottom: 25px;
 }
 
