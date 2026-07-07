@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -14,20 +16,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.card {
-  background-color: #F7F7FA;
-  width: 340px;
-  padding: 25px;
-  img {
-    width: 290px;
-  }
-}
-
-.img {
-  width: 290px;
-  height: 245px;
-}
-
 .title {
   font-size: 70px;
   font-weight: 400;
@@ -38,10 +26,24 @@ body {
   margin-bottom: 110px;
 }
 
-.products-list {
-  list-style-type: none;
+.clear-list {
+list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.card {
+  background-color: #F7F7FA;
+  width: 100%;
+  padding: 25px;
+}
+
+.card__img {
+  width: 290px;
+  height: 245px;
+}
+
+.products {
   display: flex;
   flex-wrap: wrap;
   row-gap: 45px;
@@ -49,7 +51,11 @@ body {
   justify-content: center;
 }
 
-.product-type {
+.products__item {
+  width: 340px;
+}
+
+.card__type {
   color: #A5A3B9;
   font-weight: 400;
   font-size: 12px;
@@ -58,7 +64,7 @@ body {
   text-transform: uppercase;
 }
 
-.product-name {
+.card__name {
   font-weight: 700;
   font-size: 20px;
   margin-top: 5px;
@@ -66,37 +72,33 @@ body {
   line-height: 27px;
 }
 
-.text {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
+.card__text {
   margin-top: 5px;
   margin-bottom: 15px;
-  color: #A5A3B9;
 }
 
-.list {
+.card__ingredients-title {
   margin-bottom: 5px;
 }
 
-.indent-li {
+.card__compound-list {
   margin-bottom: 25px;
 }
 
-.pr {
+.card__price-container {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-.price {
+.card__price {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
-.cost {
+.card__cost {
   font-size: 20px;
   line-height: 24px;
 }
