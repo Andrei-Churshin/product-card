@@ -22,7 +22,7 @@ body {
   line-height: 78px;
   margin: 0;
   text-align: center;
-  margin-top: 220px;
+  margin-top: 160px;
   margin-bottom: 110px;
 }
 
@@ -32,8 +32,12 @@ list-style-type: none;
   padding: 0;
 }
 
-.card {
+.card-container {
   background-color: #F7F7FA;
+}
+
+.card {
+  /*background-color: #F7F7FA;*/
   width: 100%;
   padding: 25px;
 }
@@ -102,3 +106,39 @@ list-style-type: none;
   font-size: 20px;
   line-height: 24px;
 }
+
+.active-color {
+  background-color: #4b8bf5 !important;
+  color: white;
+}
+
+.live-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  border-radius: 8px;
+}
+
+#btn-change-color-first-card:hover {
+background-color: aqua;
+}
+
+#btn-change-color-all-cards:hover {
+background-color: aqua;
+}
+
+#btn-open-google:hover {
+background-color: aqua;
+}
+
+#btn-message:hover {
+background-color: aqua;
+}
+
+#btn-toggle:hover {
+background-color: aqua;
+}
+  
+
+  
