@@ -1,4 +1,4 @@
-const productCards = document.querySelectorAll('.card-container')
+const productCards = document.querySelectorAll('.card')
 const changeColorCardButton = document.querySelector('#btn-change-color-all-cards');
 const greenColorHash ='#00ff00';
 const pinkColorHash ='#ea00ff';
@@ -7,7 +7,7 @@ changeColorCardButton.addEventListener('click', () => {
   productCards.forEach((card) => card.style.backgroundColor = greenColorHash)
 })
 
-const firstProductCard = document.querySelector('.card-container')
+const firstProductCard = document.querySelector('.card')
 const changeColorFirstCardButton = document.querySelector('#btn-change-color-first-card');
 
 changeColorFirstCardButton.addEventListener('click', () => {
@@ -37,9 +37,6 @@ const pageTitle = document.querySelector('.title');
 pageTitle.addEventListener('mouseover', () => {
   console.log(pageTitle.textContent);
 });
-//pageTitle.addEventListener('mouseover', (event) => {
-//  console.log(event.currentTarget.textContent);
-//});
 
 const toggleButton = document.querySelector('#btn-toggle');
 toggleButton.addEventListener('click', function() {
