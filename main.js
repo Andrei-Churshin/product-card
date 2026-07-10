@@ -19,8 +19,9 @@ const googleButton = document.querySelector('#btn-open-google');
 function askAndOpenGoogle() {
   const userAnswer = confirm('Вы действительно хотите перейти в Google?');
   if(userAnswer === true) {
-    window.open('http://www.google.com');}
-    else {console.log('Пользователь остался на странице');}
+    window.open('http://www.google.com');
+  } else {
+    console.log('Пользователь остался на странице');}
 }
 googleButton.addEventListener('click', askAndOpenGoogle);
 
