@@ -1,13 +1,13 @@
-const productCards = document.querySelectorAll('.card')
+const productCards = document.querySelectorAll('.card');
 const changeColorCardButton = document.querySelector('#btn-change-color-all-cards');
 const greenColorHash ='#00ff00';
 const pinkColorHash ='#ea00ff';
 
 changeColorCardButton.addEventListener('click', () => {
-  productCards.forEach((card) => card.style.backgroundColor = greenColorHash)
+  productCards.forEach((card) => card.style.backgroundColor = greenColorHash);
 })
 
-const firstProductCard = document.querySelector('.card')
+const firstProductCard = document.querySelector('.card');
 const changeColorFirstCardButton = document.querySelector('#btn-change-color-first-card');
 
 changeColorFirstCardButton.addEventListener('click', () => {
@@ -21,7 +21,8 @@ function askAndOpenGoogle() {
   if(userAnswer === true) {
     window.open('http://www.google.com');
   } else {
-    console.log('Пользователь остался на странице');}
+    console.log('Пользователь остался на странице');
+  }
 }
 googleButton.addEventListener('click', askAndOpenGoogle);
 
@@ -30,8 +31,8 @@ const messageButton = document.querySelector('#btn-message');
 messageButton.addEventListener('click', () => outputConsoleLog ('ДЗ#6'));
   
 function outputConsoleLog(text) {
-  alert('Подтвердите действие')
-  console.log(text)
+  alert('Подтвердите действие');
+  console.log(text);
 }
 
 const pageTitle = document.querySelector('.title');
