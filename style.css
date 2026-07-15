@@ -113,28 +113,5 @@ list-style-type: none;
   justify-content: center;
   gap: 15px;
   margin-top: 25px;
-  border-radius: 8px;
+  border-radius: 8px; 
 }
-
-#btn-change-color-first-card:hover {
-background-color: aqua;
-}
-
-#btn-change-color-all-cards:hover {
-background-color: aqua;
-}
-
-#btn-open-google:hover {
-background-color: aqua;
-}
-
-#btn-message:hover {
-background-color: aqua;
-}
-
-#btn-toggle:hover {
-background-color: aqua;
-}
-  
-
-  
