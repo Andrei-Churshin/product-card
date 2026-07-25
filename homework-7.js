@@ -26,7 +26,7 @@ checkSpeedValue(299792458);
 const productName = "BMW_X5";
 const productPrice = 525000;
 
-function currentBudget(userBudget) {
+function getCurrentBudget(userBudget) {
   if (userBudget >= productPrice) {
     console.log(`"${productName}" приобретен. Спасибо за покупку!`);
   } else {
@@ -35,8 +35,8 @@ function currentBudget(userBudget) {
   }
 }
 
-currentBudget(540000);
-currentBudget(500000);
+getCurrentBudget(540000);
+getCurrentBudget(500000);
 
 
 const CRITICAL_DRYNESS_LEVEL = 30;
