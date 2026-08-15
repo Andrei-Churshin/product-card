@@ -1,5 +1,7 @@
+import { comments } from "./comments.js";
+
 //Задание 2
- 
+
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const filtered = numbers.filter(num => num >= 5);
@@ -26,7 +28,6 @@ console.log(movies);
 console.log(numbers); 
 
 //Задание 6
-import { comments } from "./comments.js";
 
 console.log('Количество комментариев:', comments.length);
 console.log('Первый комментарий:', comments[0]);
@@ -51,7 +52,6 @@ const userNames = comments.map(comment => ({
 }));
 console.log(userNames);
 
-
 //Задание 10
 
 const commentsWithInvalid = comments.map(comment => ({
@@ -59,9 +59,6 @@ const commentsWithInvalid = comments.map(comment => ({
   isInvalid: comment.body.length > 180 
 }));
 console.log(commentsWithInvalid); 
-
-
-
 
 //Задание 11
 
@@ -75,7 +72,6 @@ console.log(emails1);
 // Через map (стрелочная функция)
 const emails2 = comments.map(comment => comment.email);
 console.log(emails2);
-
 
 //Задание 12
 
