@@ -85,3 +85,12 @@ console.log(emailsString1);
 // Через toString
 const emailsString2 = emails.toString();
 console.log(emailsString2);
+
+
+/*const allCards = document.querySelectorAll('.card')
+allCards.forEach((card,index) => {
+  if ((index+1) % 2 === 0)
+card.classList.add('color-card-green')
+  else (card.classList.add('color-card-red'))
+}) 
+console.log(allCards)*/
