@@ -2,9 +2,9 @@ import { products } from "./products.js";
 
 // --- Пункт 4: Метод .reduce() ---
 const productsMap = products.reduce((acc, product) => {
-  acc[product.name] = product.text;
+  acc.push({[product.name]: product.text });
   return acc;
-}, {});
+}, []);
 
 console.log("Результат метода .reduce():", productsMap);
 
