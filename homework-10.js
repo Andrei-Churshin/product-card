@@ -24,6 +24,26 @@ function getCardCount() {
   }
 }
 
+// ЕСЛИ КАРТОЧЕК СТАНЕТ БОЛЬШЕ
+// Функция 1: запрашивает у пользователя количество карточек (от 1 до динамического максимума) с защитой
+/*function getCardCount() {
+  const maxCount = products.length; // Автоматически получаем текущее количество товаров
+  let count;
+
+  while (true) {
+    const input = prompt(`Сколько карточек отобразить? От 1 до ${maxCount}`);
+    if (input === null) return 0;
+    
+    count = Number(input.trim());
+    // Проверяем, что введено целое число в диапазоне от 1 до maxCount
+    if (!isNaN(count) && Number.isInteger(count) && count >= 1 && count <= maxCount) {
+      return count;
+    }
+    alert(`Ошибка! Пожалуйста, введите целое число от 1 до ${maxCount}.`);
+  }
+}*/
+
+
 const countToDisplay = getCardCount();
 if (countToDisplay > 0) {
   const slicedProducts = products.slice(0, countToDisplay);
@@ -38,11 +58,8 @@ function renderCards(itemsToRender) {
   const fragment = document.createDocumentFragment();
   itemsToRender.forEach(product => {
     const productClone = cardTemplate.content.cloneNode(true);
-    const imgElement = productClone.querySelector('.card__img');
-    if (imgElement) {
-      imgElement.src = product.img;
-      imgElement.alt = product.name;
-    }
+    productClone.querySelector('.card__img').src = product.img;
+    productClone.querySelector('.card__img').alt = product.name;
     productClone.querySelector('.card__type').textContent = product.type;
     productClone.querySelector('.card__name').textContent = product.name;
     productClone.querySelector('.card__text').textContent = product.text;
