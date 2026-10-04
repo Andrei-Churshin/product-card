@@ -17,31 +17,110 @@
       <button id="btn-message">Вывести сообщение в консоль лог</button>
       <button id="btn-toggle">Кнопка-переключатель</button>
     </div>
+    <div class="button-container">
+      <button type="button" id="open-register-btn" class="register-trigger-btn">Регистрация</button>
+    </div>
     <h1 class="title">Выбери свой продукт</h1>
-
     <ul class="products clear-list" id="card-list">
       <template id="card-template">
-      <li class="products__item card">
-        <img src="" class="card__img" alt="" />
-        <p>
-          <span class="card__type"></span>
-        </p>
-        <h2 class="card__name"></h2>
-        <p class="card__text"></p>
-        <span class="card__ingredients-title">Состав:</span>
-        <ul class="card__compound-list">
-        </ul>
-        <div class="card__price-container">
-          <b class="card__price">Цена</b>
-          <span class="card__cost"></span>
-        </div>
-      </li>
+        <li class="products__item card">
+          <img src="" class="card__img" alt="" />
+          <p>
+            <span class="card__type"></span>
+          </p>
+          <h2 class="card__name"></h2>
+          <p class="card__text"></p>
+          <span class="card__ingredients-title">Состав:</span>
+          <ul class="card__compound-list"></ul>
+          <div class="card__price-container">
+            <b class="card__price">Цена</b>
+            <span class="card__cost"></span>
+          </div>
+        </li>
       </template>
     </ul>
+    <!-- Оверлей (затемняющий фон) и само Модальное окно -->
+    <div class="overlay" id="modal-overlay">
+      <div class="modal" id="register-modal">
+        <!-- Кнопка-крестик для закрытия -->
+        <button type="button" class="modal-close-btn" id="close-modal-btn">&times;</button>
+        <h3 class="modal-title">Регистрация нового пользователя</h3>
+        <!-- Форма регистрации внутри модалки -->
+        <form class="register-form" id="register-form">
+          <div class="form-group">
+            <label for="reg-firstname">Имя:</label>
+            <input type="text" id="reg-firstname" name="firstName" placeholder="Иван" required>
+          </div>
+          <div class="form-group">
+            <label for="reg-lastname">Фамилия:</label>
+            <input type="text" id="reg-lastname" name="lastName" placeholder="Иванов" required>
+          </div>
+          <div class="form-group">
+            <label for="reg-dob">Дата рождения:</label>
+            <input type="date" id="reg-dob" name="dateOfBirth" required>
+          </div>
+          <div class="form-group">
+            <label for="reg-login">Логин:</label>
+            <input type="text" id="reg-login" name="login" placeholder="user123" minlength="4" required>
+          </div>
+          <div class="form-group">
+            <label for="reg-password">Пароль:</label>
+            <input type="password" id="reg-password" name="password" placeholder="••••••••" minlength="6" required>
+          </div>
+          <div class="form-group">
+            <label for="reg-confirm-password">Повторите пароль:</label>
+            <input type="password" id="reg-confirm-password" name="confirm-password"         placeholder="••••••••" minlength="6" required>
+          </div>
+          <button type="submit" class="submit-reg-btn">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Первая колонка: Логотип и соцсети -->
+        <div class="footer-col">
+          <h3 class="footer-title">Product Cards</h3>
+          <p class="footer-slogan">У Нас Самые Лучшие Продукты Для Кожи!</p>
+          <div class="social-icons">
+            <a href="#">
+              <img src="./images/telegram.svg" alt="Иконка">
+            </a>
+            <a href="#">
+              <img src="./images/vk-icon.svg" alt="Иконка">
+            </a>
+          </div>
+        </div>
+        <!-- Вторая колонка: Подписка -->
+        <div class="footer-col">
+          <h4 class="subscribe-title">Подпишись на наши акции</h4>
+          <form class="subscribe-form" id="subscribe-form">
+            <input type="email" placeholder="Введите email..." class="subscribe-input" id="subscribe-email" required>
+            <button type="submit" class="subscribe-btn">Подписаться</button>
+          </form>
+        </div>
+        <!-- Третья колонка: Быстрые ссылки -->
+        <nav class="footer-col-right">
+          <div class="footer-nav-wrapper">
+          <h4 class="footer-nav-title">Быстрые ссылки</h4>
+          <ul class="footer-links">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- Копирайт на всю ширину внизу -->
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <p>www.product-cards.com | All rights reserved</p>
+      </div>
+    </footer>
     <script src="main.js"></script>
     <script src="homework-7.js"></script>
     <script src="homework-8.js"></script>
     <script type="module" src="homework-9.js"></script>
     <script type="module" src="homework-10.js"></script>
+    <script src="homework-11.js"></script>
   </body>
 </html>
