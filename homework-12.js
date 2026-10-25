@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Добавляем системные свойства
       userData.createdOn = new Date();
-      delete userData['confirm-password'];
+      delete userData.confirmPassword;
 
       // Сохраняем в глобальную переменную
       user = userData;
