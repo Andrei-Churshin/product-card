@@ -3,6 +3,7 @@ import './homework-8.js'
 import './homework-9.js'
 import './homework-10.js'
 import './homework-12.js'
+import './homework-13.js'
 const productCards = document.querySelectorAll('.card');
 const changeColorCardButton = document.querySelector('#btn-change-color-all-cards');
 const greenColorHash ='#00ff00';
