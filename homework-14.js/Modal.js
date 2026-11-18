@@ -21,7 +21,7 @@ export class Modal {
 
       console.log('[Modal Action] Добавлен слушатель клика на оверлей');
 
-      this.overlay.addEventListener('click', this.#handleOverlayClick);
+      this.overlay.addEventListener('click', this.#handleClose);
     }
     
     // Запрещаем прокрутку страницы
@@ -40,7 +40,7 @@ export class Modal {
 
       console.log('[Modal Action] Удален слушатель клика с оверлея');
 
-      this.overlay.removeEventListener('click', this.#handleOverlayClick);
+      this.overlay.removeEventListener('click', this.#handleClose);
     }
 
     // Удаляем слушатель с крестика закрытия Х, чтобы не дублировать их при следующем открытии
@@ -49,7 +49,7 @@ export class Modal {
 
       console.log('[Modal Action] Удален слушатель с кнопки закрытия');
 
-      closeButton.removeEventListener('click', this.#handleCloseButtonClick);
+      closeButton.removeEventListener('click', this.#handleClose);
     }
     
     // Возвращаем прокрутку страницы
@@ -75,15 +75,11 @@ export class Modal {
   #initClose() {
     const closeButton = this.modal.querySelector('[data-modal-close]');
     if (closeButton) {
-      closeButton.addEventListener('click', this.#handleCloseButtonClick);
+      closeButton.addEventListener('click', this.#handleClose);
     }
   }
 
-  #handleOverlayClick = () => {
-    this.close();
-  }
-
-  #handleCloseButtonClick = () => {
+  #handleClose = () => {
     this.close();
   }
 }
